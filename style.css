@@ -206,7 +206,7 @@ mark {
   border-bottom: 1px solid #333;
   outline: none;
   background: none;
-  width: 85px;
+  /* width: 85px; */
   background-color: var(--primary-light);
   margin: 0.1rem 0;
 }
@@ -225,7 +225,12 @@ mark {
   color: var(--text-secondary);
 }
 mark {
+  min-width: 10ch;
   color: var(--text-secondary);
+}
+input {
+  width: 10ch;
+  /* max-width: 100%; */
 }
 span {
   margin: 0.1rem 0;

@@ -78,6 +78,10 @@ function createPos(word, previewContainer, editContainer) {
       output.innerHTML = input.value;
       input.classList.add("filled");
       output.classList.add("filled");
+      let inputLength = input.value.length;
+      if (input.value.length >= 10) {
+        input.style.width = `${inputLength}ch`;
+      }
     } else {
       input.classList.remove("filled");
       output.classList.remove("filled");
